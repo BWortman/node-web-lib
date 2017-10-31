@@ -1,0 +1,17 @@
+﻿<h1><%= article.headline %></h1>
+
+<img src=<%= article.imageSrc %> title=<%= article.imageSrc %> alt="oops">
+
+<div>
+  <ul style="list-style: none;">
+    <% article.body.forEach((bodyElement) => { %>
+    <li>
+      <p>
+        <%= bodyElement %>
+      </p>
+    </li>
+    <% }); %>
+  </ul>
+</div>
+
+

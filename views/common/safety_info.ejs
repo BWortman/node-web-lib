@@ -1,0 +1,17 @@
+﻿<h1>
+  <%- safetyInfoHeader %>
+</h1>
+
+<div>
+  <ul style="list-style: none;">
+    <% safetyInfoDetails.forEach(function(detail) { %>
+    <li>
+      <p>
+        <%= detail %>
+      </p>
+    </li>
+    <% }); %>
+  </ul>
+</div>
+
+

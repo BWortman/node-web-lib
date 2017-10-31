@@ -1,0 +1,14 @@
+﻿<h1>About ProductX</h1>
+
+<div>
+  <ul style="list-style: none;">
+    <% aboutProductInfo.forEach((infoItem) => { %>
+      <li>
+        <img src=<%= infoItem.imageSrc %> title="<%= infoItem.imageSrc %>">
+        <p><%= infoItem.quote %></p>
+      </li>
+    <% }); %>
+  </ul>
+</div>
+
+<%- include ../common/safety_info %>

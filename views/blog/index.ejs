@@ -1,0 +1,13 @@
+﻿<h1>ProductX Blog</h1>
+
+<div>
+  <ul style="list-style: none;">
+    <% blogSummaries.forEach((article) => { %>
+      <li>
+        <a href="/blog/<%- article.id %>"><h1><%= article.headline %></h1></a>
+      </li>
+    <% }); %>
+  </ul>
+</div>
+
+<%- include ../common/safety_info %>
